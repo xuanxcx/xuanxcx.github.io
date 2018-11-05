@@ -28,7 +28,7 @@
 <meta property="og:url" content="http://www.xuancx.com/tags/随笔/index.html">
 <meta property="og:site_name" content="岁言">
 <meta property="og:description" content="个人学习积累之所用。">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="岁言">
 <meta name="twitter:description" content="个人学习积累之所用。">
@@ -125,7 +125,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -151,10 +151,18 @@
 <div class="tabs-bar container">
     <nav class="tags-list">
         <a href="/tags" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
-            ">全て</a>
+            ">全部</a>
         
 
             <a href="/tags/随笔/" style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light active">随笔</a>
+
+        
+
+            <a href="/tags/笔记/" style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light">笔记</a>
+
+        
+
+            <a href="/tags/Hexo/" style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">Hexo</a>
 
         
     </nav>
@@ -187,7 +195,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/11/05/所谓幸福/">所谓幸福</a>
+      <a class="post-title-link" href="/所谓幸福.html">所谓幸福</a>
     </h3>
   
 
@@ -219,7 +227,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/11/05/生活的真相/">生活的真相</a>
+      <a class="post-title-link" href="/生活的真相.html">生活的真相</a>
     </h3>
   
 
@@ -251,7 +259,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2018/11/05/您好，Hexo/">Hello Hexo</a>
+      <a class="post-title-link" href="/您好，Hexo.html">Hello Hexo</a>
     </h3>
   
 
@@ -291,7 +299,7 @@
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
         </p>
     </div>
     <div class="bottom">
@@ -398,10 +406,10 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '死鬼去哪里了！';
+            document.title = '岁言~常回来看看！';
             clearTimeout(titleTime);
         } else {
-            document.title = '(つェ⊂)咦!又好了!';
+            document.title = '(つェ⊂)欢迎回来~！';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
